@@ -1,0 +1,173 @@
+
+html, body, div, span, applet, object,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    //padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    color: black;
+    background-color: #cecece;
+    font-family: 'Overpass', sans-serif;
+}
+
+iframe {
+    border: none;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+    box-sizing:         border-box;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0.3;
+    transition: opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
+
+
+#overview { display: none }
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.slide1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    flex-direction: column;
+}
+
+.title {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 9vmin;
+    color: rgb(68, 86, 32);
+    margin-bottom: 10vmin;
+    width: fit-content;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4vmin 0 auto 0;
+}
+
+.team_member {
+    border-radius: 10px;
+    width: 12vw;
+    height: 12vw;
+}
+
+.name {
+    font-size: 3.5vmin;
+    color: #7c7c7c;
+}
+
+.github {
+    margin-top: 3vmin;
+    font-size: 2vmin;
+    color: rgb(68, 86, 32);
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-size: 20vmin;
+    color: rgb(68, 86, 32);
+    position: relative;
+}
+
+.logo_site {
+    margin-top: 20px;
+    color: rgb(68, 86, 32);
+    font-size: 5vmin;
+}
+
+.commits {
+    margin: auto;
+}
+
+.blendocu-team {
+    text-align: right;
+    font-size: 3vmin;
+    color: #919191;
+}
+li {
+    text-align: left;
+}
+ul {
+    width: 60%;
+    margin: auto;
+}
+
+.email {
+    margin-top: 4vmin;
+    margin-left: 4vmin;
+    display: flex;
+    color: #3d3d3d;
+}
+
+.email-image {
+    width: 15vmin;
+    height: 15vmin;
+    margin: 0 3vmin 0 3vmin;
+}
+
+.email-title {
+    margin:  auto 0 auto 4VMIN;
+}
+
+.who {
+    margin-top: 2vmin;
+    color:  rgb(150, 190, 71);
+    font-size: 2vmin;
+}
+
+.what-different {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.what {
+    margin: 5vmin;
+    width: 30vmin;
+    height: 30vmin;
+    background-color: chartreuse;
+}
