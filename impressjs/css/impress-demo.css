@@ -13,7 +13,7 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
-    //padding: 0;
+//padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
@@ -73,7 +73,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    font-size: 9vmin;
+    font-size: 8vmin;
     color: rgb(68, 86, 32);
     margin-bottom: 10vmin;
     width: fit-content;
@@ -137,7 +137,6 @@ ul {
 
 .email {
     margin-top: 4vmin;
-    margin-left: 4vmin;
     display: flex;
     color: #3d3d3d;
 }
@@ -149,6 +148,8 @@ ul {
 }
 
 .email-title {
+    text-align: left;
+    font-size: 5vmin;
     margin:  auto 0 auto 4VMIN;
 }
 
@@ -170,4 +171,147 @@ ul {
     width: 30vmin;
     height: 30vmin;
     background-color: chartreuse;
+}
+
+
+.preloader {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: wait;
+}
+
+
+.preloader__item-1 {
+    margin: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #fa7f96;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.preloader__item-2 {
+    margin: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #9c6ee5;
+    top: 0;
+    right: 0;
+    animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.preloader__item-3 {
+    margin: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #4ca6f7;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+.preloader__item-4 {
+    margin: 3px;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: #fada6b;
+    bottom: 0;
+    left: 0;
+    animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
+}
+
+@keyframes item-1_move {
+    0%{
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, 100px);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    75% {
+        transform: translate(100px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes item-2_move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(-100px, 0);
+    }
+    50% {
+        transform: translate(-100px, 100px);
+    }
+    75% {
+        transform: translate(0, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes item-3_move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(0, -100px);
+    }
+    50% {
+        transform: translate(-100px, -100px);
+    }
+    75% {
+        transform: translate(-100px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes item-4_move {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 0);
+    }
+    50% {
+        transform: translate(100px, -100px);
+    }
+    75% {
+        transform: translate(0, -100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.filling {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    justify-content: space-around;
 }
