@@ -90,17 +90,18 @@ iframe {
     border-radius: 10px;
     width: 12vw;
     height: 12vw;
+    border: 2px solid rgb(68, 86, 32);
 }
 
 .name {
     font-size: 3.5vmin;
-    color: #7c7c7c;
+    color: rgb(78, 99, 37);
 }
 
 .github {
     margin-top: 3vmin;
-    font-size: 2vmin;
-    color: rgb(68, 86, 32);
+    font-size: 2.5vmin;
+    color: #404040;
 }
 
 .logo {
@@ -125,7 +126,7 @@ iframe {
 .blendocu-team {
     text-align: right;
     font-size: 3vmin;
-    color: #919191;
+    color: #494949;
 }
 li {
     text-align: left;
@@ -155,7 +156,7 @@ ul {
 
 .who {
     margin-top: 2vmin;
-    color:  rgb(150, 190, 71);
+    color: rgb(78, 99, 37);
     font-size: 2vmin;
 }
 
@@ -171,142 +172,6 @@ ul {
     width: 30vmin;
     height: 30vmin;
     background-color: chartreuse;
-}
-
-
-.preloader {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    cursor: wait;
-}
-
-
-.preloader__item-1 {
-    margin: 3px;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: #fa7f96;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    animation: item-1_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-}
-
-.preloader__item-2 {
-    margin: 3px;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: #9c6ee5;
-    top: 0;
-    right: 0;
-    animation: item-2_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-}
-
-.preloader__item-3 {
-    margin: 3px;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: #4ca6f7;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    animation: item-3_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-}
-
-.preloader__item-4 {
-    margin: 3px;
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-color: #fada6b;
-    bottom: 0;
-    left: 0;
-    animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-}
-
-@keyframes item-1_move {
-    0%{
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(0, 100px);
-    }
-    50% {
-        transform: translate(100px, 100px);
-    }
-    75% {
-        transform: translate(100px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes item-2_move {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(-100px, 0);
-    }
-    50% {
-        transform: translate(-100px, 100px);
-    }
-    75% {
-        transform: translate(0, 100px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes item-3_move {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(0, -100px);
-    }
-    50% {
-        transform: translate(-100px, -100px);
-    }
-    75% {
-        transform: translate(-100px, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
-}
-
-@keyframes item-4_move {
-    0% {
-        transform: translate(0, 0);
-    }
-    25% {
-        transform: translate(100px, 0);
-    }
-    50% {
-        transform: translate(100px, -100px);
-    }
-    75% {
-        transform: translate(0, -100px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
 
 .filling {
